@@ -1,0 +1,7 @@
+{
+  "name": "aplicativoBT",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
