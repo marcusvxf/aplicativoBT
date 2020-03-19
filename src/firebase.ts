@@ -2,7 +2,7 @@ import * as firebase from 'firebase'
 import { resolve } from 'dns'
 
 const config = {
-    piKey: "AIzaSyAil0PaywCl0zJCe0PQiR8cQ5w1-fxsP5I",
+    apiKey: "AIzaSyAil0PaywCl0zJCe0PQiR8cQ5w1-fxsP5I",
     authDomain: "aplicativo-bt.firebaseapp.com",
     databaseURL: "https://aplicativo-bt.firebaseio.com",
     projectId: "aplicativo-bt",
