@@ -1,0 +1,38 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+.new-background-color{
+  --background:#ff914d;
+  text-align: center;
+  padding-left: 1em;
+
+}
+
+.principal{
+  --background:#4dbbff ;
+  
+}
+
+
+ion-tab-bar{
+  display:flex;
+
+}
+
+.login{
+  border: 3px solid #f1f1f1;
+  width: 350px;
+  height: 665px;
+  position: absolute;
+  border-radius: 0.9em;
+  left: 7%;
+  top:3%;
+  --background: transparent;
+  background-image: #000000;
+  margin-left: -100px;
+  margin-top: -100px;
+  font-size: 2em;
+
+
+}
