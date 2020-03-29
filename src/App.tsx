@@ -1,21 +1,11 @@
-import React from 'react';
-import { Redirect, Route } from 'react-router-dom';
-import {
-  IonApp,
-  IonIcon,
-  IonLabel,
-  IonRouterOutlet,
-  IonTabBar,
-  IonTabButton,
-  IonTabs
-} from '@ionic/react';
+import Menu from './components/Menu';
+import Tab1 from './pages/tab1';
+import React, { useState } from 'react';
+import { IonApp, IonRouterOutlet, IonSplitPane, IonTabs, IonTabBar, IonButton, IonTabButton, IonIcon } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle,homeOutline, checkmarkOutline, calendarOutline } from 'ionicons/icons';
-import Tab1 from './pages/Tab1';
-import Tab2 from './pages/Tab2';
-import Tab3 from './pages/Tab3';
-import Tab4 from './pages/tab4';
-import "./pages/Tab1.css";
+import { Redirect, Route } from 'react-router-dom';
+import Tab2 from './pages/tab2';
+import Tab3 from './pages/tab3';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -35,36 +25,48 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { homeOutline, checkmark, checkmarkOutline, calendarOutline } from 'ionicons/icons';
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonTabs>
-        <IonRouterOutlet>          
-          <Route path="/tab4" component={Tab4} exact={true}/>
-          <Route path="/tab1" component={Tab1} exact={true} />
-          <Route path="/tab2" component={Tab2} exact={true} />
-          <Route path="/tab3" component={Tab3} exact={true}/>
+const App: React.FC = () => {
 
-          <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
-        </IonRouterOutlet>
-        <IonTabBar slot="bottom">
-          <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon size="large" icon={homeOutline} />
+  const [selectedPage, setSelectedPage] = useState('');
 
-          </IonTabButton>
-          <IonTabButton tab="tab2" href="/tab2">
-            <IonIcon size="large" icon={checkmarkOutline} />
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonSplitPane contentId="main">
 
-          </IonTabButton>
-          <IonTabButton tab="tab3" href="/tab3">
-            <IonIcon size="large" icon={calendarOutline} />
+            <Menu selectedPage={selectedPage} />
 
-          </IonTabButton>
-        </IonTabBar>
-      </IonTabs>
-    </IonReactRouter>
-  </IonApp>
-);
+          <IonTabs>
+            <IonRouterOutlet id="main">          
+              <Route path="/tab1" component={Tab1} exact={true}/>
+              <Route path="/tab2" component={Tab2} exact={true}/>
+              <Route path="/tab3" component={Tab3} exact={true}/>
+              <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
+
+            </IonRouterOutlet>
+            <IonTabBar slot="bottom">
+              <IonTabButton tab="tab1" href="/tab1">
+                <IonIcon size="large" icon={homeOutline} />
+              </IonTabButton>
+
+            <IonTabButton tab="tab2" href="/tab2">
+              <IonIcon size="large" icon={checkmarkOutline} />
+            </IonTabButton>
+
+            <IonTabButton tab="Tab3" href="/tab3">
+              <IonIcon size="large" icon={calendarOutline} />
+            </IonTabButton>
+
+            </IonTabBar>
+          </IonTabs>
+
+
+        </IonSplitPane>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;
