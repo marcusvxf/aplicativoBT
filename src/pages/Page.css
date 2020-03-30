@@ -5,7 +5,8 @@ ion-content ion-toolbar {
 .new-background-color{
   --background:#ff914d;
   text-align: center;
-  padding-left: 1em;
+  padding-left: 2em;
+  padding-right: 0.5em;
 
 }
 
@@ -35,4 +36,8 @@ ion-tab-bar{
   font-size: 2em;
 
 
+}
+
+.rodape{
+  text-align: center;
 }

@@ -8,11 +8,11 @@ import {
   IonMenu,
   IonMenuToggle,
   IonNote,
-  IonHeader, IonToolbar, IonTitle
+  IonHeader, IonToolbar, IonTitle, IonFooter, IonButton
 } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
-import { archiveOutline, archiveSharp, bookmarkOutline, heartOutline, heartSharp, mailOutline, mailSharp, paperPlaneOutline, paperPlaneSharp, trashOutline, trashSharp, warningOutline, warningSharp, checkmarkOutline } from 'ionicons/icons';
+import { checkmarkOutline, settingsOutline, personOutline } from 'ionicons/icons';
 import './Menu.css';
 
 interface MenuProps extends RouteComponentProps {
@@ -44,14 +44,21 @@ const Menu: React.FunctionComponent<MenuProps> = ({ selectedPage }) => {
       </IonHeader>
       <IonContent>
           <IonList>
-            <IonItem>
+            <IonItem routerLink="/tab3">
               Configuração
-              <IonIcon slot="start" icon={checkmarkOutline}>
-
+              <IonIcon slot="start" icon={settingsOutline}/>
+            </IonItem>
+            <IonItem routerLink="/tab2">
+              Sobre
+              <IonIcon slot="start" icon={personOutline}>
               </IonIcon>
             </IonItem>
           </IonList>
-      </IonContent>
+
+      </IonContent>          
+          <IonFooter class="rodape">
+            <h4>Versão Beta</h4>
+          </IonFooter>
   </IonMenu>
   );
 }

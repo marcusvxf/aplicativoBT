@@ -1,7 +1,7 @@
 import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle,IonIcon, IonToolbar } from '@ionic/react';
 import React from 'react';
 import './Page.css';
-import { settingsOutline } from 'ionicons/icons';
+import { settingsOutline, optionsOutline } from 'ionicons/icons';
 
 const Tab1: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Tab1: React.FC = () => {
       <IonHeader >
         
         <IonToolbar class="new-background-color">
-          <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={settingsOutline}></IonIcon></IonMenuButton></IonButtons>
+          <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={optionsOutline}></IonIcon></IonMenuButton></IonButtons>
           <IonTitle>Bem vindo "nome da pessoa"</IonTitle>
         </IonToolbar>
       </IonHeader>
