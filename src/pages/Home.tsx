@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonList, IonItemDivider, IonItem, IonLabel, IonCheckbox, IonThumbnail, IonImg } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonList, IonItem, IonLabel, IonCheckbox, IonThumbnail, IonImg } from '@ionic/react';
 import React, { useState } from 'react';
 import './Home.css';
 
@@ -20,12 +20,12 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Configurações</IonTitle>
+        <IonToolbar class="new-background-color">
+          <IonTitle color="dark"><h2>Configurações</h2></IonTitle>
         </IonToolbar>
       </IonHeader>
 
-      <IonContent>
+      <IonContent class="principal">
 
         <IonHeader collapse="condense">
           <IonToolbar>
@@ -37,26 +37,26 @@ const Home: React.FC = () => {
         <p>E-mail: abc@biotechconsultoria.com</p>
         <IonList>
           {items.map((image, i) => (
-            <IonItem key={i}>
+            <IonItem key={i} class="principal">
               <IonThumbnail slot="start">
-                <IonImg src={image.src} />
+                <IonImg src={image.src}/>
               </IonThumbnail>
               <IonLabel>{image.text}</IonLabel>
             </IonItem>
           ))}
         </IonList>
-        <IonButton expand="block" fill="outline">Editar perfil</IonButton>
-        <IonButton expand="block" fill="outline">Logout</IonButton>
+        <IonButton expand="block" fill="solid">Editar perfil</IonButton>
+        <IonButton expand="block" fill="solid">Logout</IonButton>
 
         <h2>Notificações</h2>
         <IonList>
             {checkboxList.map(({ val, isChecked }, i) => (
-              <IonItem key={i}>
+              <IonItem key={i} class="principal">
                 <IonLabel>{val}</IonLabel>
                 <IonCheckbox slot="end" value={val} checked={isChecked} />
               </IonItem>
             ))}
-          </IonList>
+        </IonList>
 
       </IonContent>
     </IonPage>
