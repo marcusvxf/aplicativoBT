@@ -45,7 +45,7 @@ const Home: React.FC = () => {
             </IonItem>
           ))}
         </IonList>
-        <IonButton expand="block" fill="solid">Editar perfil</IonButton>
+        <IonButton expand="block" fill="solid" href="/EditarPerfil">Editar perfil</IonButton>
         <IonButton expand="block" fill="solid">Logout</IonButton>
 
         <h2>Notificações</h2>
