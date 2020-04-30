@@ -1,0 +1,14 @@
+ion-content{
+    --background: #797774;
+}
+ion-title{
+    text-align: center;
+    color: rgb(10, 76, 143);
+}
+  
+.ion-padding{
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 0.5em;
+  
+}
