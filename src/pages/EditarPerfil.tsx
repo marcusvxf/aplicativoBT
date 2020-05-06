@@ -38,7 +38,6 @@ const Home: React.FC = () => {
         <h2>Conta</h2>
         <p>E-mail: abc@biotechconsultoria.com</p>
 
-        <IonList class="principal">
           {items.map((image, i) => (
             <IonItem key={i} class="principal">
               <IonThumbnail slot="start">
@@ -47,12 +46,10 @@ const Home: React.FC = () => {
               <IonLabel>{image.text}</IonLabel>
             </IonItem>
           ))}
-        </IonList>
 
         <IonButton expand="block" fill="solid" href="/Home">Home</IonButton>
 
         <h2>Editando o perfil</h2>
-        <IonList class="principal">
           <IonItem class="principal">
             <IonLabel position="floating">Novo nome de perfil</IonLabel>
             <IonInput value={text}></IonInput>
@@ -67,7 +64,6 @@ const Home: React.FC = () => {
             <IonLabel position="floating">Digite a nova senha novamente</IonLabel>
             <IonInput value={text}></IonInput>
           </IonItem>
-        </IonList>
         <IonButton expand="block" fill="solid">Confirmar edição</IonButton>
 
       </IonContent>

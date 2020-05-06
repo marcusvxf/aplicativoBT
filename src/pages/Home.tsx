@@ -35,7 +35,6 @@ const Home: React.FC = () => {
 
         <h2>Conta</h2>
         <p>E-mail: abc@biotechconsultoria.com</p>
-        <IonList>
           {items.map((image, i) => (
             <IonItem key={i} class="principal">
               <IonThumbnail slot="start">
@@ -44,19 +43,16 @@ const Home: React.FC = () => {
               <IonLabel>{image.text}</IonLabel>
             </IonItem>
           ))}
-        </IonList>
         <IonButton expand="block" fill="solid" href="/EditarPerfil">Editar perfil</IonButton>
         <IonButton expand="block" fill="solid">Logout</IonButton>
 
         <h2>Notificações</h2>
-        <IonList>
             {checkboxList.map(({ val, isChecked }, i) => (
               <IonItem key={i} class="principal">
                 <IonLabel>{val}</IonLabel>
                 <IonCheckbox slot="end" value={val} checked={isChecked} />
               </IonItem>
             ))}
-        </IonList>
 
       </IonContent>
     </IonPage>
