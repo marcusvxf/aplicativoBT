@@ -12,10 +12,11 @@ ion-content ion-toolbar {
 
 .principal{
   --background:#4dbbff ;
+  
 }
 
 
-/* ion-tab-bar{
+ion-tab-bar{
   display:flex;
 
 }
@@ -34,9 +35,9 @@ ion-content ion-toolbar {
   margin-top: -100px;
   font-size: 2em;
 
+
 }
+
 .rodape{
   text-align: center;
 }
-*/
-
