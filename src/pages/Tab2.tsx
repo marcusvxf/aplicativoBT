@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonMenuButton ,IonButtons ,IonIcon} from '@ionic/react';
 import "./Page.css"
-import {optionsOutline} from "ionicons/icons";
+import {optionsOutline,menuOutline} from "ionicons/icons";
 
 
 const Tab2: React.FC = () => {
@@ -9,7 +9,7 @@ const Tab2: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar class="new-background-color">
-          <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={optionsOutline}></IonIcon></IonMenuButton></IonButtons>
+          <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={menuOutline}></IonIcon></IonMenuButton></IonButtons>
           <IonTitle>Tab 2</IonTitle>
         </IonToolbar>
       </IonHeader>

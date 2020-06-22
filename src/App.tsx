@@ -25,7 +25,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { homeOutline, checkmark, checkmarkOutline, calendarOutline } from 'ionicons/icons';
+import { home, checkmark, checkmarkOutline, calendar } from 'ionicons/icons';
 
 const App: React.FC = () => {
 
@@ -48,15 +48,15 @@ const App: React.FC = () => {
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
               <IonTabButton tab="Tab1" href="/tab1">
-                <IonIcon size="large" icon={homeOutline} />
+                <IonIcon size="large" icon={home} />
               </IonTabButton>
 
             <IonTabButton tab="tab2" href="/tab2">
-              <IonIcon size="large" icon={checkmarkOutline} />
+              <IonIcon size="large" icon={checkmark} />
             </IonTabButton>
 
             <IonTabButton tab="Tab3" href="/tab3">
-              <IonIcon size="large" icon={calendarOutline} />
+              <IonIcon size="large" icon={calendar} />
             </IonTabButton>
 
             </IonTabBar>

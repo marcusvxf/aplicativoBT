@@ -1,7 +1,7 @@
-import { IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle,IonIcon, IonToolbar, IonCard, IonCardHeader, IonCardContent, IonItem } from '@ionic/react';
+import {IonCheckbox, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle,IonIcon, IonToolbar, IonCard, IonCardHeader, IonCardContent, IonItem, IonImg, IonText, IonRow, IonCol } from '@ionic/react';
 import React from 'react';
 import './Page.css';
-import { optionsOutline,checkbox } from 'ionicons/icons';
+import { optionsOutline,checkbox,menuOutline, logoAmazon } from 'ionicons/icons';
 
 const Tab1: React.FC = () => {
   return (
@@ -9,40 +9,47 @@ const Tab1: React.FC = () => {
       <IonHeader >
         
         <IonToolbar class="new-background-color">
-          <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={optionsOutline}></IonIcon></IonMenuButton></IonButtons>
-          <IonTitle color="dark"><h2>Bem vindo</h2></IonTitle>
+          <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={menuOutline}></IonIcon></IonMenuButton></IonButtons>
+          <IonTitle color="dark"><IonImg src={".logo.png"}></IonImg></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent class="principal">
         <IonCard>
           <IonCardHeader>        
-            <h1>Horarios de plantões</h1>
+          <h1>Plantão do dia</h1>
 
           </IonCardHeader>
-          <IonCardContent>              
-    
-              <h1>Seg - 13h as 15h</h1>
-              <h1>Qua - 15h as 17h</h1>
+          <IonCardContent>
+            <IonItem >
+              <IonItem class="linha"></IonItem>
+              <IonContent class="centralizar">9h00 - 12h00</IonContent>
 
+            </IonItem>
+              
+
+              
           </IonCardContent>
 
         </IonCard>
-        <IonCard>
+        <IonCard class="ioncard">
           <IonCardHeader>
-            <h1>Atividades</h1>
+            <h1>Plantão do dia</h1>
           </IonCardHeader>
           <IonCardContent>
+            <IonItem class="box">
 
-               <h1>Atualizar planilhas</h1>                 
-               <h1>RG</h1>
+              <IonItem class="linha"></IonItem>
+              <IonText class="rodape">Pessoa 1</IonText>
+
+              
+            </IonItem>
+            <IonItem>
+              pessoa 2
+            </IonItem>
      
 
           </IonCardContent>
         </IonCard>
-       {/* <IonContent class="login" >
-
-
-       </IonContent>*/}
         
       </IonContent >
     </IonPage>
