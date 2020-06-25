@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+.toolbar {
+    background-color: white;
+}
+
+
+.check-title {
+
+    box-sizing: border-box;
+
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    
+    display: flex;
+    align-items: baseline;
+    flex-direction: row; 
+
+}
+
+
+.report-title {
+    font-weight: bold;
+    color: #4f4f4f;
+}
+
+.date-title {
+
+    margin-left: 12px;
+    font-weight: 500;
+    color: #6c6d6d;
+
+}
+
+.label {
+
+    font-weight: 400;
+    
+
+}
+
+.checkbox {
+
+    width: 20px;
+    height: 20px;
+
+   
+    --checkmark-width: 2px;
+    --checkmark-color: #ffff;
+   
+    --width-checked:0px;
+    --background-checked: #4dbbff;
+    --border-color-checked: #4dbbff;
+
+    --border-width: 1px;
+    --border-radius: 100%;
+
+    transition: 400ms;
+    
+  }
+  
+ 
+  .icon {
+
+      color:white ;
+
+  }
+
+  .new-list {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row; 
+      margin-left:22px;
+      margin-top: 12px;
+       color: #6c6d6d;
+   
+  }
+
+  .new-list-name {
+    margin-left: 36px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6c6d6d;
+
+  }
