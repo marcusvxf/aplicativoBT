@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+.config-span {
+    position: absolute;
+
+    display: flex;
+
+    width: 20px;
+
+    top: 3.01%;
+    right: 90.75%;
+    bottom: 93.78%;
+    left: 2.92%;
+ }
+ .name-toolbar {
+    font-size: 20px;
+    font-weight:bold;
+
+    text-align: center;
+
+    margin: auto;
+    width: 200px;     
+}
+
+.space-options {
+    padding-top: 20px;   
+}
+
+
+.label {
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 12px;
+
+    font-weight: 500;   
+}
+
+.style-toggle {
+
+    width: 36px;
+    height: 24px;
+
+    --handle-background: #ffffff;
+    --background-checked: #fc904c;
+    --handle-background-checked: #ffffff;
+   
+    --handle-transition: 400ms;
+    
+  }

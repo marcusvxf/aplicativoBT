@@ -44,7 +44,7 @@ const Menu: React.FunctionComponent<MenuProps> = ({ selectedPage }) => {
       </IonHeader>
       <IonContent>
           <IonList>
-            <IonItem routerLink="/Config">
+            <IonItem routerLink="/notific">
               Configuração
               <IonIcon slot="start" icon={settingsOutline}/>
             </IonItem>

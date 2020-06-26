@@ -6,7 +6,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
-import Config from './pages/Config';
+import notific from './pages/notific';
 import EditarPerfil from './pages/EditarPerfil';
 
 /* Core CSS required for Ionic components to work properly */
@@ -42,7 +42,7 @@ const App: React.FC = () => {
 
           <IonTabs>
             <IonRouterOutlet id="main">
-              <Route path="/Config" component={Config} exact={true} />
+              <Route path="/notific" component={notific} exact={true} />
               <Route path="/EditarPerfil" component={EditarPerfil} exact={true} />              
               <Route path="/tab1" component={Tab1} exact={true}/>
               <Route path="/tab2" component={Tab2} exact={true}/>
