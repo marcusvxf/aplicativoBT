@@ -1,7 +1,7 @@
-import {IonCheckbox, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle,IonIcon, IonToolbar, IonCard, IonCardHeader, IonCardContent, IonItem, IonImg, IonText, IonRow, IonCol } from '@ionic/react';
+import {IonCheckbox, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle,IonIcon, IonToolbar, IonCard, IonCardHeader, IonCardContent, IonItem, IonImg, IonText, IonRow, IonCol, IonGrid } from '@ionic/react';
 import React from 'react';
 import './Page.css';
-import { optionsOutline,checkbox,menuOutline, logoAmazon } from 'ionicons/icons';
+import { optionsOutline,checkbox,menuOutline, logoAmazon, checkmarkOutline, checkmarkSharp } from 'ionicons/icons';
 
 const Tab1: React.FC = () => {
   return (
@@ -20,34 +20,67 @@ const Tab1: React.FC = () => {
 
           </IonCardHeader>
           <IonCardContent>
-            <IonItem >
-              <IonItem class="linha"></IonItem>
-              <IonContent class="centralizar">9h00 - 12h00</IonContent>
+          
+              <IonRow>
+                <IonCol size="4">
+                  sluodiuodiukasgdiubiaidhgfhbaofpjkiuabguidb
 
-            </IonItem>
-              
+                </IonCol>
+                <IonCol size="1">
+                  <IonContent class="linha2"/>
 
-              
+                </IonCol>
+                <IonCol>
+                  <IonContent class="centralizar">9h00 - 12h00</IonContent>
+                </IonCol>
+              </IonRow>
+
+   
           </IonCardContent>
 
         </IonCard>
         <IonCard class="ioncard">
           <IonCardHeader>
-            <h1>Plantão do dia</h1>
+            <h1>Report - 17/06</h1>
           </IonCardHeader>
           <IonCardContent>
-            <IonItem class="box">
+            <IonGrid>
 
-              <IonItem class="linha"></IonItem>
-              <IonText class="rodape">Pessoa 1</IonText>
+              <IonRow class="box">
+                <IonCol size="4">oishnfioshifhohfiu8tuyffiugfifgsaiufgiugaiuiugugusiu
 
+                </IonCol>
+                <IonCol size="1" >
+                  <IonItem class="linha"/>
+
+                </IonCol>
+                <IonCol >
+                  <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
+
+                </IonCol>
+
+              </IonRow>
+
+
+              <IonRow class="box">
+                <IonCol size="4">oishnfioshifhohfiu8tuyffiugfifgsaiufgiugaiuiugugusiu
+
+                </IonCol>
+                <IonCol size="1" >
+                  <IonItem class="linha"/>
+
+                </IonCol>
+                <IonCol >
+                  <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
+
+                </IonCol>
+
+              </IonRow>
               
-            </IonItem>
-            <IonItem>
-              pessoa 2
-            </IonItem>
-     
 
+            </IonGrid>
+            
+     
           </IonCardContent>
         </IonCard>
         
