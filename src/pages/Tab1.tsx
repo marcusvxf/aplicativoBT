@@ -10,7 +10,7 @@ const Tab1: React.FC = () => {
         
         <IonToolbar class="new-background-color">
           <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={menuOutline}></IonIcon></IonMenuButton></IonButtons>
-          <IonTitle color="dark"><IonImg src={".logo.png"}></IonImg></IonTitle>
+          <IonTitle color="dark"><IonImg src={"https://drive.google.com/file/d/1oXpaCcXhpdCI-bacL65rRPJ1y7IPsQrQ/view?usp=sharing"}></IonImg></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent class="principal">
@@ -22,8 +22,9 @@ const Tab1: React.FC = () => {
           <IonCardContent>
           
               <IonRow>
-                <IonCol size="4">
-                  sluodiuodiukasgdiubiaidhgfhbaofpjkiuabguidb
+                <IonCol className="circulocentral" size="3">
+                  <IonContent className="circulo"/>
+                 
 
                 </IonCol>
                 <IonCol size="1">
@@ -47,7 +48,8 @@ const Tab1: React.FC = () => {
             <IonGrid>
 
               <IonRow class="box">
-                <IonCol size="4">oishnfioshifhohfiu8tuyffiugfifgsaiufgiugaiuiugugusiu
+                <IonCol className="circulocentral2" size="3">
+                  <IonContent className="circulo2" />
 
                 </IonCol>
                 <IonCol size="1" >
@@ -63,7 +65,8 @@ const Tab1: React.FC = () => {
 
 
               <IonRow class="box">
-                <IonCol size="4">oishnfioshifhohfiu8tuyffiugfifgsaiufgiugaiuiugugusiu
+                <IonCol className="circulocentral2" size="3">
+                  <IonContent className="circulo2" />
 
                 </IonCol>
                 <IonCol size="1" >

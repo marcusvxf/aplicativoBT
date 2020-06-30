@@ -63,13 +63,14 @@ ion-tab-bar{
 .centralizar{
   margin-bottom: 10px;
   text-align: left;
-  top: 17px;
+  top: 30px;
   font-size: 20px;
   line-height: 19px;
   font-style: normal;
   font-weight: normal;
   --color: #6C6D6D;
   position: absolute;
+  
 
  
 }
@@ -96,4 +97,34 @@ ion-tab-bar{
   --border-color: transparent;
   --border-color-checked: transparent;
   --size: 20px;
+}
+
+.circulo{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  --background: transparent;
+
+}
+
+.circulocentral{
+  text-align: center;
+  margin-left: 26px;
+  margin-right: 4px;
+ 
+}
+
+.circulo2{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  --background: transparent;
+}
+.circulocentral2{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
