@@ -44,47 +44,49 @@ const Tab1: React.FC = () => {
           <IonCardHeader>
             <h1>Report - 17/06</h1>
           </IonCardHeader>
-          <IonCardContent>
-            <IonGrid>
+          <IonContent scrollEvents={true}>
+            <IonCardContent>
+              <IonGrid>
 
-              <IonRow class="box">
-                <IonCol className="circulocentral2" size="3">
-                  <IonContent className="circulo2" />
+                <IonRow class="box">
+                  <IonCol className="circulocentral2" size="3">
+                    <IonContent className="circulo2" />
 
-                </IonCol>
-                <IonCol size="1" >
-                  <IonItem class="linha"/>
+                  </IonCol>
+                  <IonCol size="1" >
+                    <IonItem class="linha"/>
 
-                </IonCol>
-                <IonCol >
-                  <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
+                  </IonCol>
+                  <IonCol >
+                    <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
 
-                </IonCol>
+                  </IonCol>
 
-              </IonRow>
+                </IonRow>
 
 
-              <IonRow class="box">
-                <IonCol className="circulocentral2" size="3">
-                  <IonContent className="circulo2" />
+                <IonRow class="box">
+                  <IonCol className="circulocentral2" size="3">
+                    <IonContent className="circulo2" />
 
-                </IonCol>
-                <IonCol size="1" >
-                  <IonItem class="linha"/>
+                  </IonCol>
+                  <IonCol size="1" >
+                    <IonItem class="linha"/>
 
-                </IonCol>
-                <IonCol >
-                  <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
+                  </IonCol>
+                  <IonCol >
+                    <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
 
-                </IonCol>
+                  </IonCol>
 
-              </IonRow>
+                </IonRow>
+                
+
+              </IonGrid>
               
-
-            </IonGrid>
-            
-     
-          </IonCardContent>
+      
+            </IonCardContent>
+          </IonContent>
         </IonCard>
         
       </IonContent >
