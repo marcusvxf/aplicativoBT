@@ -1,7 +1,8 @@
-import {IonCheckbox, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle,IonIcon, IonToolbar, IonCard, IonCardHeader, IonCardContent, IonItem, IonImg, IonText, IonRow, IonCol, IonGrid } from '@ionic/react';
+import {IonCheckbox, IonButtons, IonContent, IonHeader, IonMenuButton, IonPage, IonTitle,IonIcon, IonToolbar, IonCard, IonCardHeader, IonCardContent, IonItem, IonImg, IonText, IonRow, IonCol, IonGrid, IonFooter } from '@ionic/react';
 import React from 'react';
 import './Page.css';
 import { optionsOutline,checkbox,menuOutline, logoAmazon, checkmarkOutline, checkmarkSharp } from 'ionicons/icons';
+import {IonInfiniteScroll, IonInfiniteScrollContent}from '@ionic/react';
 
 const Tab1: React.FC = () => {
   return (
@@ -14,7 +15,7 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent class="principal">
-        <IonCard>
+        <IonCard class="ioncardplantao">
           <IonCardHeader>        
           <h1>Plantão do dia</h1>
 
@@ -32,7 +33,7 @@ const Tab1: React.FC = () => {
 
                 </IonCol>
                 <IonCol>
-                  <IonContent class="centralizar">9h00 - 12h00</IonContent>
+                  <IonContent class="centralizar2">9h00 - 12h00</IonContent>
                 </IonCol>
               </IonRow>
 
@@ -44,49 +45,58 @@ const Tab1: React.FC = () => {
           <IonCardHeader>
             <h1>Report - 17/06</h1>
           </IonCardHeader>
-          <IonContent scrollEvents={true}>
-            <IonCardContent>
-              <IonGrid>
+          <IonContent scrollEvents={true} >
+            <IonInfiniteScroll>
+              <IonInfiniteScrollContent>
 
-                <IonRow class="box">
-                  <IonCol className="circulocentral2" size="3">
-                    <IonContent className="circulo2" />
+                <IonCardContent>
 
-                  </IonCol>
-                  <IonCol size="1" >
-                    <IonItem class="linha"/>
+                  <IonGrid>
+                    <IonRow class="box">
+                      <IonCol className="circulocentral2" size="3">
+                        <IonContent className="circulo2" /><br/>Leticia
 
-                  </IonCol>
-                  <IonCol >
-                    <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
+                      </IonCol>
+                      <IonCol size="1" >
+                        <IonItem class="linha"/>
 
-                  </IonCol>
+                      </IonCol>
+                      <IonCol >
+                        <IonContent class="centralizar"><IonIcon size="large" icon={checkmarkSharp}/>to vendendo <br/><br/><IonIcon size="large" icon={checkmarkSharp}/>huehue<br/><br/><IonIcon size="large" icon={checkmarkSharp}/>juiyyth</IonContent>
 
-                </IonRow>
+                      </IonCol>
+
+                    </IonRow>
 
 
-                <IonRow class="box">
-                  <IonCol className="circulocentral2" size="3">
-                    <IonContent className="circulo2" />
+                    <IonRow class="box">
+                      <IonCol className="circulocentral2" size="3">
+                        <IonContent className="circulo2" /><br/>João
 
-                  </IonCol>
-                  <IonCol size="1" >
-                    <IonItem class="linha"/>
+                      </IonCol>
+                      <IonCol size="1" >
+                        <IonItem class="linha"/>
 
-                  </IonCol>
-                  <IonCol >
-                    <IonContent class="centralizar"><IonIcon icon={checkmarkSharp}/>to vendendo <br/><IonIcon icon={checkmarkSharp}/>huehue<br/><IonIcon icon={checkmarkSharp}/>juiyyth</IonContent>
+                      </IonCol>
+                      <IonCol >
+                        <IonContent class="centralizar"><IonIcon size="large" icon={checkmarkSharp}/>to vendendo <br/><br/><IonIcon size="large" icon={checkmarkSharp}/>huehue<br/><br/><IonIcon size="large" icon={checkmarkSharp}/>juiyyth</IonContent>
 
-                  </IonCol>
+                      </IonCol>
 
-                </IonRow>
-                
+                    </IonRow>
 
-              </IonGrid>
+
+                  </IonGrid>
+                  
+          
+                </IonCardContent>
+
+              </IonInfiniteScrollContent>
               
-      
-            </IonCardContent>
+            </IonInfiniteScroll>
+
           </IonContent>
+
         </IonCard>
         
       </IonContent >
