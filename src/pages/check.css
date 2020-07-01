@@ -6,7 +6,7 @@
 }
 
 .logobt img {
-    max-height:80px;
+    max-height:50px;
     width: auto;
     height: auto;
 }
@@ -14,6 +14,7 @@
     clear: both;
     display: flex;
     justify-content: center;
+  
 }
 
 .check-title {
