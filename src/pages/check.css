@@ -5,6 +5,16 @@
     background-color: white;
 }
 
+.logobt img {
+    max-height:80px;
+    width: auto;
+    height: auto;
+}
+.logobt {
+    clear: both;
+    display: flex;
+    justify-content: center;
+}
 
 .check-title {
 

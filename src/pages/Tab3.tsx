@@ -20,6 +20,9 @@ const Tab3: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar class="toolbar">
+          <div className="logobt">
+            <img src="https://i.ibb.co/C2mqVnL/Logo-horizontal-fundo-transparente.png"/>
+          </div>
           <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={optionsOutline}></IonIcon></IonMenuButton></IonButtons>
 
         </IonToolbar>
