@@ -1,4 +1,4 @@
-import { IonCardContent, IonButton, IonCard, IonIcon, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonToggle, IonList, IonItem, IonLabel, IonItemDivider } from '@ionic/react';
+import { IonCardContent, IonButton, IonCard, IonIcon, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonToggle, IonList, IonItem, IonLabel, IonItemDivider, IonButtons, IonBackButton } from '@ionic/react';
 import React, { useState } from 'react';
 import { arrowBack } from 'ionicons/icons';
 import './notific.css';
@@ -12,12 +12,12 @@ const Home: React.FC = () => {
       <IonHeader>
 
         <IonToolbar>
+       
 
           <IonTitle>
 
-            <span className="config-span">
-              <IonIcon icon={arrowBack}></IonIcon>
-            </span>
+            <span> <IonButtons className="config-span" slot="start"><IonBackButton defaultHref="tab3" icon={arrowBack}></IonBackButton></IonButtons></span>
+
 
             <p className="name-toolbar">Notificações</p>
 
@@ -57,3 +57,5 @@ const Home: React.FC = () => {
 };
 
 export default Home;
+
+

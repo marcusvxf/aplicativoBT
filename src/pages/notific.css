@@ -8,10 +8,11 @@
 
     width: 20px;
 
-    top: 3.01%;
+    top: 12px;
     right: 90.75%;
     bottom: 93.78%;
     left: 2.92%;
+    
  }
  .name-toolbar {
     font-size: 20px;
@@ -39,13 +40,17 @@
 
 .style-toggle {
 
-    width: 36px;
-    height: 24px;
-
+    
+  
     --handle-background: #ffffff;
     --background-checked: #fc904c;
     --handle-background-checked: #ffffff;
+    
+    
    
     --handle-transition: 400ms;
     
   }
+
+
+
