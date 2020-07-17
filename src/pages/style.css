@@ -1,0 +1,218 @@
+/* GENERAL */
+
+ion-page{
+    font-family: sans-serif;
+}
+
+ion-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --background: white;
+}
+
+ion-button {
+    --border-radius: 10px;
+    --box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.35);
+    width: 260px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.orangeText {
+    color: rgb(245, 150, 51);
+}
+
+.ion-padding {
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 0.5em;
+}
+
+
+/* MAIN PAGE */
+
+.logoMain {
+    width: 40%;
+    margin: 130px 50px 100px 115px;
+}
+
+ion-back-button {
+    width: 70px;
+}
+
+/* REGISTER PAGE */
+
+.logoRegister {
+    width: 40px;
+    display: flex;
+    margin: 0px 0px 0px 255px;
+}
+
+#headerRegister {
+    margin: 40px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+#titleRegister {
+    width: 93%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 40px 10px;
+}
+
+#titleRegister h2 {
+    font-size: 30px;
+    color: rgb(68, 68, 68);
+}
+
+#contentRegister {
+    padding: 0px 40px;
+}
+
+#lastInputRegister {
+    margin-bottom: 90px;
+}
+
+/* LOGIN PAGE */
+
+#headerLogin {
+    margin: 40px 0px -10px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logoLogin {
+    width: 250px;
+    margin: 0px 0px -30px 80px;
+}
+
+#contentLogin {
+    padding: 0px 40px;
+}
+
+#forgotLogin {
+    position: relative;
+    float: right;
+    margin: 40px 0px 25px 0px;
+}
+
+/* RESET PAGE */
+
+#titleReset {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px 40px 0px;
+    color: rgb(68, 68, 68);
+}
+
+#titleReset p{
+    font-size: 20px;
+}
+
+#titleReset h2{
+    font-size: 30px;
+}
+
+#contentReset {
+    padding: 0px 40px;
+}
+
+#lastInputReset {
+    margin-bottom: 60px;
+}
+
+@media only screen and (width: 414px) { /*IPHONE 6/7/8 PLUS*/
+    .logoMain {
+        margin-left: 113px; 
+    }
+    .logoLogin{
+        width: 245px;
+        margin: 0px 0px -30px 79px;
+    }
+    #contentLogin {
+        padding: 0px 50px 0px 30px;
+    }
+    .logoRegister{
+        display: flex;
+        margin: 0px 0px 0px 265px;
+    }
+    #titleRegister {
+        margin: 30px 0px 30px 15px;
+    }
+    #contentRegister {
+        padding: 0px 50px 0px 30px;
+    }
+    #lastInputRegister {
+        margin-bottom: 50px;
+    }
+    #contentReset {
+        padding: 0px 50px 0px 30px;
+    }   
+}
+
+@media only screen and (width: 375px) { /*IPHONE 6/7/8*/
+    .logoMain {
+        margin-left: 103px; 
+    }
+    .logoLogin{
+        width: 240px;
+        margin: 0px 0px -30px 62px;
+    }
+    #contentLogin {
+        padding: 0px 53px 0px 30px;
+    }
+    .logoRegister{
+        display: flex;
+        margin: 0px 0px 0px 225px;
+    }
+    #titleRegister {
+        margin: 20px 0px 20px 10px;
+    }
+    #contentRegister {
+        padding: 0px 53px 0px 30px;
+    }
+    #lastInputRegister {
+        margin-bottom: 50px;
+    }
+    #contentReset {
+        padding: 0px 53px 0px 30px;
+    }
+}
+
+@media only screen and (width: 360px) { /*IPHONE 6/7/8 PLUS*/
+    .logoMain {
+        margin-left: 99px; 
+    }
+    .logoLogin{
+        width: 230px;
+        margin: -10px 0px -35px 65px;
+    }
+    #contentLogin {
+        padding: 0px 29px 0px 30px;
+    }
+    .logoRegister{
+        display: flex;
+        margin: 0px 0px 0px 205px;
+    }
+    #titleRegister {
+        margin: 20px 0px 20px 15px;
+    }
+    #contentRegister {
+        padding: 0px 31px 0px 30px;
+    }
+    #lastInputRegister {
+        margin-bottom: 50px;
+    }
+    #contentReset {
+        padding: 0px 30px 0px 30px;
+    }   
+}
