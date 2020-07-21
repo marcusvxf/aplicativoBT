@@ -12,7 +12,7 @@ import {
 } from '@ionic/react';
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
-import { checkmarkOutline, settingsOutline, personOutline } from 'ionicons/icons';
+import { checkmarkOutline, settingsOutline, personOutline ,logOutOutline, notificationsCircleOutline, notificationsOutline} from 'ionicons/icons';
 import './Menu.css';
 
 interface MenuProps extends RouteComponentProps {
@@ -45,13 +45,17 @@ const Menu: React.FunctionComponent<MenuProps> = ({ selectedPage }) => {
       <IonContent>
           <IonList>
             <IonItem routerLink="/tab3">
-              Configuração
-              <IonIcon slot="start" icon={settingsOutline}/>
+              Notificação
+              <IonIcon slot="start" icon={notificationsOutline}/>
             </IonItem>
             <IonItem routerLink="/tab2">
-              Sobre
+              Perfil
               <IonIcon slot="start" icon={personOutline}>
               </IonIcon>
+            </IonItem>
+            <IonItem>
+              Sair
+              <IonIcon slot="start" icon={logOutOutline}></IonIcon>
             </IonItem>
           </IonList>
 

@@ -3,7 +3,7 @@ ion-content ion-toolbar {
 }
 
 .new-background-color{
-  --background:#ff914d;
+  --background:#fffff;
   text-align: center;
   padding-left: 2em;
   padding-right: 0.5em;
@@ -11,7 +11,7 @@ ion-content ion-toolbar {
 }
 
 .principal{
-  --background:#4dbbff ;
+  --background:#fffff ;
 }
 
 

@@ -10,7 +10,6 @@ import { Redirect, Route } from 'react-router-dom';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
 
-
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
 
@@ -29,7 +28,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { homeOutline, checkmark, checkmarkOutline, calendarOutline } from 'ionicons/icons';
+import { home, checkmark, checkmarkOutline, calendar } from 'ionicons/icons';
 
 const App: React.FC = () => {
 
@@ -44,25 +43,25 @@ const App: React.FC = () => {
 
           <IonTabs>
             <IonRouterOutlet id="main">
-              <Route path="/home" component={Home} exact={true} />
+              <Route path="/Home" component={Home} exact={true} />
               <Route path="/EditarPerfil" component={EditarPerfil} exact={true} />
-              <Route path="/tab1" component={Tab1} exact={true}/>
-              <Route path="/tab2" component={Tab2} exact={true}/>
-              <Route path="/tab3" component={Tab3} exact={true}/>
+              <Route path="/Tab1" component={Tab1} exact={true}/>
+              <Route path="/Tab2" component={Tab2} exact={true}/>
+              <Route path="/Tab3" component={Tab3} exact={true}/>
               <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
 
             </IonRouterOutlet>
             <IonTabBar slot="bottom">
-              <IonTabButton tab="tab1" href="/tab1">
-                <IonIcon size="large" icon={homeOutline} />
+              <IonTabButton tab="Tab1" href="/tab1">
+                <IonIcon size="large" icon={home} />
               </IonTabButton>
 
             <IonTabButton tab="tab2" href="/tab2">
-              <IonIcon size="large" icon={checkmarkOutline} />
+              <IonIcon size="large" icon={checkmark} />
             </IonTabButton>
 
             <IonTabButton tab="Tab3" href="/tab3">
-              <IonIcon size="large" icon={calendarOutline} />
+              <IonIcon size="large" icon={calendar} />
             </IonTabButton>
 
             </IonTabBar>
