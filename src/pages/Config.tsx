@@ -1,6 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonList, IonItem, IonLabel, IonCheckbox, IonThumbnail, IonImg } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonList, IonItem, IonLabel, IonCheckbox, IonThumbnail, IonImg , IonButtons,IonMenuButton,IonIcon} from '@ionic/react';
 import React, { useState } from 'react';
 import './Home.css';
+import {optionsOutline} from "ionicons/icons";
 
 const checkboxList = [
   { val: 'Ativar notificações', isChecked: true },
@@ -13,7 +14,7 @@ type Item = {
 };
 const items: Item[] = [{ src: 'http://placekitten.com/g/200/300', text: 'Nome de perfil acompanhado com figura' }];
 
-const Home: React.FC = () => {
+const Config: React.FC = () => {
 
   const [checked, setChecked] = useState(false);
 
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar class="new-background-color">
+        <IonButtons slot="end"><IonMenuButton><IonIcon size="large" icon={optionsOutline}></IonIcon></IonMenuButton></IonButtons>
           <IonTitle color="dark"><h2>Configurações</h2></IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -59,4 +61,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Config;
