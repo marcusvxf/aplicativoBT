@@ -3,6 +3,9 @@ import Tab1 from './pages/Tab1';
 import React, { useState } from 'react';
 import { IonApp, IonRouterOutlet, IonSplitPane, IonTabs, IonTabBar, IonButton, IonTabButton, IonIcon } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+
+import Home from './pages/Home';
+import EditarPerfil from './pages/EditarPerfil';
 import { Redirect, Route } from 'react-router-dom';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -39,7 +42,9 @@ const App: React.FC = () => {
             <Menu selectedPage={selectedPage} />
 
           <IonTabs>
-            <IonRouterOutlet id="main">          
+            <IonRouterOutlet id="main">
+              <Route path="/Home" component={Home} exact={true} />
+              <Route path="/EditarPerfil" component={EditarPerfil} exact={true} />
               <Route path="/Tab1" component={Tab1} exact={true}/>
               <Route path="/Tab2" component={Tab2} exact={true}/>
               <Route path="/Tab3" component={Tab3} exact={true}/>
@@ -61,7 +66,6 @@ const App: React.FC = () => {
 
             </IonTabBar>
           </IonTabs>
-
 
         </IonSplitPane>
       </IonReactRouter>
